@@ -1,0 +1,166 @@
+/*
+Theme Name:         Cabourg
+Description:        Cabourg is html 5 theme to display your work and blog.
+Version:            1.0.0
+Author:             Regis Bruggheman
+Author URI:         http://oscar.com
+
+*/ 
+
+/* THEME VARIABLES
+-------------------------------------------------- */
+
+/* THEME MIXINS
+-------------------------------------------------- */
+
+/* IMPORTS
+-------------------------------------------------- */
+@import "theme/variables"; 
+@import "bootstrap-3.0.0/bootstrap";
+@import "font-awesome-3.2.1/font-awesome";
+@import "theme/navbar";
+@import "theme/footer";
+@import "theme/contact";
+@import "theme/flexslider";
+
+/* FIX FOR IE DEVICE_WIDTH BUG
+-------------------------------------------------- */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+// Color for the placeholder plugin
+.placeholder {
+  color: $input-color-placeholder;
+}
+
+/* FIX FOR GMAP BUG
+-------------------------------------------------- */
+#map-canvas {
+  height: 500px;
+  img {
+    max-width: none;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
+/* GLOBAL STYLE
+-------------------------------------------------- */
+// We do not want focus
+// -------------------------
+a:focus,
+.btn:focus {
+  outline: 0;
+}
+::selection {
+	background-color: #000;
+	color: #fff;
+}
+.copy-text {
+  table {
+    @extend .table;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+p {
+  letter-spacing: 1px;
+}
+/* PRINT UTILITIES
+-------------------------------------------------- */
+.navbar, #footer, #sidebar, form {
+  @extend .hidden-print;
+}
+
+/* HEADER
+-------------------------------------------------- */
+html, body, #page-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  @include box-sizing(border-box);
+}
+body {
+  font-weight: 300;
+}
+#header{
+  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  height: 100%;
+  
+  h1 {
+    font-size: 16px;
+  }
+}
+
+.no-touch #header{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#content-wrapper {
+  display:none;
+  width: 280px;
+  height: 320px;
+  display:table;
+  background-color: $brand-primary;
+}
+#content{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.interflora {
+  border-top: 1px solid lighten($brand-primary, 30%);
+  border-bottom: 1px solid lighten($brand-primary, 30%);
+  margin-top: $line-height-computed;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+  p {
+    font-family: $font-family-serif;
+    margin-bottom: 0;
+  }
+}
+
+.secondary-nav > li > a {
+   line-height: 60px;
+   &:hover {
+     background-color: transparent;
+   }
+   img {
+      margin-right: 12px;
+      border: 4px solid #fff;
+      border-radius: 4px;
+   }
+}
+.page-header {
+  margin-top: 0;
+  border: none;
+  h1 {
+    margin-top: 0;
+    font-size: 30px; 
+    font-family: $font-family-serif;
+    font-style: italic;
+  }
+}
+
+
+.flexslider {
+  margin: 0;
+}
+.carousel-flexslider {
+  margin-top: -4px; 
+}
+
+ 

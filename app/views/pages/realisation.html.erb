@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-header">
+            <%= render_page_title(resource.title) %>
+          </div>
+          <%= render_copy_text(resource.body) %>
+          <%= render_slideshow_for(resource) %>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <ul class="nav secondary-nav" >
+        <% resource.self_and_siblings.in_menu.each do |section| %>
+          <li>
+            <%= link_to(section.public_url) do %>
+              <%= image_fu(section.thumbnail, "80x60", :class => "pull-left") %>
+              <%= section.title %>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div> 
+</div>

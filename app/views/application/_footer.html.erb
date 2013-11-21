@@ -1,0 +1,29 @@
+<%# cache([site, I18n.locale, 'footer']) do %>
+<!-- START COPYRIGHT -->
+<section>
+  <div class="container">
+    <div class="row interflora">
+      <div class="col-xs-4 col-sm-2">
+        <%= image_tag("logo_interflora.png", :class => "img-responsive") %>
+      </div>
+      <div class="col-xs-8 col-sm-10">
+        <p><small><em><%= t("custom.interflora") %></em></small></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="copyright">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-xs-6 text-left">
+        <%= render_menu('pipe') %>
+      </div>
+      <div class="col-xs-6 text-right">
+        <p>@ Copyright. All Rights Reserved. Created by <a href="http://www.joufdesign.com">Jouf Design.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END COPYRIGHT -->
+<%# end %>
