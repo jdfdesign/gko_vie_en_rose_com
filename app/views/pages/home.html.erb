@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="page-header">
+        <%= render_page_title(resource.title) %>
+      </div>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-5">
+      <%= render_copy_text(resource.body) %>
+    </div>
+    <div class="col-xs-12 col-md-7">
+      <%= render_slideshow_for(resource) %>
+    </div>
+  </div>
+</div>

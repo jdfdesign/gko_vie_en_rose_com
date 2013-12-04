@@ -24,8 +24,13 @@
 }
 
 .navbar-brand {
-  padding-top: ($navbar-height - $th-brand-logo-height)/2;
+  max-width: 240px;
+  padding-top: 20px + ($navbar-height - $th-brand-logo-height)/2;
   padding-bottom: ($navbar-height - $th-brand-logo-height)/2;
+  @media (min-width: $grid-float-breakpoint) {
+    max-width: none;
+    padding-top: ($navbar-height - $th-brand-logo-height)/2;
+  }
 }
 
 /* CUSTOMIZE THE LANGUAGE MENU
