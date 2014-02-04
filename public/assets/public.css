@@ -9944,25 +9944,30 @@ a .icon-flip-vertical:before {
   }
 }
 
-/* line 15, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 14, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav > li > a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 11px;
 }
-/* line 19, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 18, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-nav > li > a:hover {
   text-decoration: underline;
 }
+/* line 23, ../../app/assets/stylesheets/theme/_navbar.scss */
+.navbar-nav .dropdown-menu {
+  font-size: 11px;
+  top: 70%;
+}
 
-/* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 29, ../../app/assets/stylesheets/theme/_navbar.scss */
 .navbar-brand {
   max-width: 240px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 @media (min-width: 768px) {
-  /* line 26, ../../app/assets/stylesheets/theme/_navbar.scss */
+  /* line 29, ../../app/assets/stylesheets/theme/_navbar.scss */
   .navbar-brand {
     max-width: none;
     padding-top: 10px;
@@ -9971,7 +9976,7 @@ a .icon-flip-vertical:before {
 
 /* CUSTOMIZE THE LANGUAGE MENU
 -------------------------------------------------- */
-/* line 38, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 41, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu {
   font-family: Georgia, "Times New Roman", Times, serif;
   position: fixed;
@@ -9981,11 +9986,11 @@ a .icon-flip-vertical:before {
   top: 0;
   border-top: 4px solid #6b203c;
 }
-/* line 46, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 49, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav {
   float: right;
 }
-/* line 49, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 52, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a {
   background-color: #6b203c;
   color: #fff;
@@ -9996,7 +10001,7 @@ a .icon-flip-vertical:before {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 58, ../../app/assets/stylesheets/theme/_navbar.scss */
+/* line 61, ../../app/assets/stylesheets/theme/_navbar.scss */
 #locales-menu .nav > li > a:hover, #locales-menu .nav > li > a:focus {
   background-color: #c74375;
   color: white;

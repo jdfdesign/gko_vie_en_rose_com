@@ -3,6 +3,7 @@
 ================================================== -->
 <nav class="navbar navbar-default">
   <%= render "locales_select" %>
+  <div class="container">
   <div class="navbar-header">
     <%= link_to(image_tag("logo.png", :class => "img-responsive"), root_url, :alt => site.title, :class => "navbar-brand") %>
     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -15,5 +16,6 @@
   <div class="collapse navbar-collapse">
     <%= render 'menu', :sections => site.primary_menu, :menu_name => 'navbar-nav' %> 
   </div>  
+  </div>
 </nav>
 <%# end %>
