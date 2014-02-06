@@ -47,7 +47,7 @@ module GkoVieEnRoseCom
     #defines the full path to be used for the asset precompiler’s manifest file. Defaults to using    
     #config.assets.manifest = config.assets.prefix
     
-    config.assets.precompile += %w( modernizr-2.6.2-respond-1.1.0.min.js )
+    #config.assets.precompile += %w( modernizr-2.6.2-respond-1.1.0.min.js )
     
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
