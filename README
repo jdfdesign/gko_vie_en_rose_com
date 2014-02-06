@@ -13,7 +13,6 @@ cd ~/Github/gko_vie_en_rose_com
 rails s
 cd ~/Github/gko_vie_en_rose_com
 RAILS_ENV=production joufdesig  
-RAILS_ENV=development bundle exec rake assets:precompile 
 bundle exec rake assets:precompile
 cd ~/Github/gko_vie_en_rose_com
 bundle exec rake railties:install:migrations
