@@ -9,8 +9,13 @@ end
 
 group :production do
 <<<<<<< HEAD
+<<<<<<< HEAD
   git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.10.1" do
    gem 'gko_core'
+=======
+  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.10" do
+    gem 'gko_core'
+>>>>>>> FETCH_HEAD
 =======
   git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.10" do
     gem 'gko_core'

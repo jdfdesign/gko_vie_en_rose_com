@@ -10,10 +10,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> FETCH_HEAD
 ActiveRecord::Schema.define(:version => 20140327151932) do
 
   create_table "assets", :force => true do |t|
