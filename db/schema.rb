@@ -10,7 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140415163526) do
+<<<<<<< HEAD
+
+=======
+>>>>>>> FETCH_HEAD
+ActiveRecord::Schema.define(:version => 20140327151932) do
 
   create_table "assets", :force => true do |t|
     t.integer  "site_id"
