@@ -18,7 +18,7 @@ end
 
 #group :development do
 #  gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
-#  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
+#  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'#
 #  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
 #  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
 #end
